@@ -61,6 +61,16 @@ const hasCompass = false;
 console.log("You see two paths: one leads to the mountains, the other to the village.");
 const choice = readline.question("Do you go to the 'mountains' or the 'village'?");
 
+const readline = require('readline-sync');
+
+const hasTorch = true;
+const hasMap = false;
+const hasSword = true;
+const hasCompass = false;
+
+console.log("You see two paths: one leads to the mountains, the other to the village.");
+const choice = readline.question("Do you go to the 'mountains' or the 'village'?");
+
 if (choice === "mountains") {
   if (hasTorch) {
     console.log("You safely navigate through the dark mountains.");
