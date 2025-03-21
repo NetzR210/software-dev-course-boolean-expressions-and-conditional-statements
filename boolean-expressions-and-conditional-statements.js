@@ -28,43 +28,6 @@ const readline = require('readline-sync');
 
 const hasTorch = true;
 const hasMap = false;
-
-console.log("You see two paths: one leads to the mountains, the other to the village.");
-const choice = readline.question("Do you go to the 'mountains' or the 'village'?");
-
-if (choice === "mountains" && hasTorch) {
-  console.log("You safely navigate through the dark mountains.");
-} else if (choice === "mountains" && !hasTorch) {
-  console.log("It's too dark to proceed. You decide to turn back.");
-} else if (choice === "village" || hasMap) {
-  console.log("You find your way to the village.");
-} else {
-  console.log("You get lost and wander aimlessly.");
-}
-
-/* 
-
-Add Customization and expand the game:
-  - Add more choices and scenarios.
-  - Include additional items (e.g., a sword, a compass).
-  - Use nested conditionals and logical operators to create complex outcomes.
-
-*/
-
-const readline = require('readline-sync');
-
-const hasTorch = true;
-const hasMap = false;
-const hasSword = true;
-const hasCompass = false;
-
-console.log("You see two paths: one leads to the mountains, the other to the village.");
-const choice = readline.question("Do you go to the 'mountains' or the 'village'?");
-
-const readline = require('readline-sync');
-
-const hasTorch = true;
-const hasMap = false;
 const hasSword = true;
 const hasCompass = false;
 
@@ -96,3 +59,4 @@ if (choice === "mountains") {
 } else {
   console.log("You hesitate and end up wandering aimlessly.");
 }
+
